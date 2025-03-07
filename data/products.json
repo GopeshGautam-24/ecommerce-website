@@ -1,0 +1,64 @@
+{
+    "smartphones": [
+        {
+            "id": "s1",
+            "name": "iPhone 14 Pro",
+            "price": 999.99,
+            "image": "https://iplanet.one/cdn/shop/files/iPhone_14_Pro_Space_Black_PDP_Image_Position-1a__WWEN_5a6c808e-90ea-4beb-95f7-fa4ef12a4c67.jpg?v=1691141429&width=176",
+            "description": "Latest iPhone with dynamic island",
+            "rating": 4.8
+        },
+        {
+            "id": "s2",
+            "name": "Samsung S23 Ultra",
+            "price": 1199.99,
+            "image": "https://m.media-amazon.com/images/I/71OXmy3NMCL.jpg",
+            "description": "Premium Android flagship",
+            "rating": 4.7
+        },
+        {
+            "id": "s3",
+            "name": "Google Pixel 7 Pro",
+            "price": 899.99,
+            "image": "https://m.media-amazon.com/images/I/61CB-MZkbYL.jpg",
+            "description": "Best camera smartphone",
+            "rating": 4.6
+        }
+    ],
+    "tablets": [
+        {
+            "id": "t1",
+            "name": "iPad Pro 12.9",
+            "price": 1099.99,
+            "image": "https://m.media-amazon.com/images/I/81Dd5ZGiUzL.jpg",
+            "description": "Most powerful iPad ever",
+            "rating": 4.9
+        },
+        {
+            "id": "t2",
+            "name": "Samsung Tab S8 Ultra",
+            "price": 899.99,
+            "image": "https://images.samsung.com/in/galaxy-tab-s8/feature/buy/GalaxyTab_S8Ultra_AllColorKV_WithSPen_MO.jpg",
+            "description": "Premium Android tablet",
+            "rating": 4.7
+        }
+    ],
+    "accessories": [
+        {
+            "id": "a1",
+            "name": "AirPods Pro",
+            "price": 249.99,
+            "image": "https://m.media-amazon.com/images/I/61j4joabs5L.jpg",
+            "description": "Premium wireless earbuds",
+            "rating": 4.8
+        },
+        {
+            "id": "a2",
+            "name": "Samsung Galaxy Watch 5",
+            "price": 279.99,
+            "image": "https://images.samsung.com/in/galaxy-watch5/feature/galaxy-watch5-bioacitive-sensor-bia-mo.jpg",
+            "description": "Advanced smartwatch",
+            "rating": 4.6
+        }
+    ]
+}

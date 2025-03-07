@@ -1,0 +1,64 @@
+{
+  "carts": {
+    "gopeshgautam@gmail.com": [
+      {
+        "id": "t1",
+        "name": "iPad Pro 12.9",
+        "price": 1099.99,
+        "image": "https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Most powerful iPad ever",
+        "rating": 4.9,
+        "quantity": 1
+      },
+      {
+        "id": "s1",
+        "name": "iPhone 14 Pro",
+        "price": 999.99,
+        "image": "https://images.pexels.com/photos/5741605/pexels-photo-5741605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Latest iPhone with dynamic island",
+        "rating": 4.8,
+        "quantity": 1
+      }
+    ],
+    "mayur@gmail.com": [
+      {
+        "id": "s1",
+        "name": "iPhone 14 Pro",
+        "price": 999.99,
+        "image": "https://images.pexels.com/photos/5741605/pexels-photo-5741605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Latest iPhone with dynamic island",
+        "rating": 4.8,
+        "quantity": 1
+      },
+      {
+        "id": "s2",
+        "name": "Samsung S23 Ultra",
+        "price": 1199.99,
+        "image": "https://images.pexels.com/photos/13616795/pexels-photo-13616795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Premium Android flagship",
+        "rating": 4.7,
+        "quantity": 1
+      },
+      {
+        "id": "s1-0",
+        "name": "iPhone 14 Pro",
+        "price": 999.99,
+        "image": "https://images.pexels.com/photos/5741605/pexels-photo-5741605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "description": "Latest iPhone with dynamic island",
+        "rating": 4.8,
+        "quantity": 1
+      }
+    ],
+    "anirudh@gmail.com": [
+      {
+        "id": "s2",
+        "name": "Samsung S23 Ultra",
+        "price": 1199.99,
+        "image": "https://m.media-amazon.com/images/I/71OXmy3NMCL.jpg",
+        "description": "Premium Android flagship",
+        "rating": 4.7,
+        "quantity": 1
+      }
+    ]
+  }
+}

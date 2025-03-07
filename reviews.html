@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Experience Review</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #00d2ff;
+            --success-color: #28a745;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --border-color: #dee2e6;
+            --gradient-start: #007bff;
+            --gradient-end: #00d2ff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            min-height: calc(100vh - 160px); /* Account for navbar and footer */
+            max-width: 800px;
+            margin: 80px auto 40px; /* Added top margin for navbar */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-section {
+            width: 100%;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        .page-title {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 20px 0;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .form-group:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            font-size: 35px;
+            padding: 10px 0;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            cursor: pointer;
+            width: 50px;
+            color: #ddd;
+            transition: all 0.3s ease;
+        }
+
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ffd700;
+        }
+
+        .rating label:hover {
+            transform: scale(1.2);
+            color: #ffd700;
+            text-shadow: 0 0 20px rgba(255,215,0,0.5);
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .checkbox-group input[type="checkbox"],
+        .checkbox-group input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .radio-group input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        button {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                padding: 10px;
+            }
+            .form-section {
+                padding: 20px;
+            }
+        }
+
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ElectroStore</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#products">Products</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./reviews.html">Review Us</a></li>
+                <li><a href="./login.html" class="login-btn"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-section">
+            <h1 class="page-title">Site Experience Review</h1>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label>1. Overall satisfaction rating:</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="satisfaction" value="5" required>
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="satisfaction" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="satisfaction" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="satisfaction" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="satisfaction" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>2. How easy was it to navigate the website?</label>
+                    <select name="navigation" required>
+                        <option value="">Select an option</option>
+                        <option value="very-easy">Very Easy</option>
+                        <option value="easy">Easy</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="difficult">Difficult</option>
+                        <option value="very-difficult">Very Difficult</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>3. Which features did you use? (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="features" value="search">
+                            <span>Search</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features" value="filter">
+                            <span>Filter</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features" value="cart">
+                            <span>Shopping Cart</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="features" value="wishlist">
+                            <span>Wishlist</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>4. How likely are you to recommend us to others? (1-10)</label>
+                    <input type="range" name="recommendation" min="1" max="10" required>
+                    <output for="recommendation"></output>
+                </div>
+
+                <div class="form-group">
+                    <label>5. What was the main purpose of your visit?</label>
+                    <select name="purpose" required>
+                        <option value="">Select an option</option>
+                        <option value="browse">Browsing Products</option>
+                        <option value="purchase">Making a Purchase</option>
+                        <option value="support">Customer Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>6. Did you encounter any technical issues?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="technicalIssues" value="yes" required>
+                            <span>Yes</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="technicalIssues" value="no">
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>7. How would you rate our product selection?</label>
+                    <select name="productSelection" required>
+                        <option value="">Select an option</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>8. What improvements would you suggest?</label>
+                    <textarea name="improvements" rows="4" placeholder="Please share your suggestions..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>9. How did you hear about us?</label>
+                    <select name="source" required>
+                        <option value="">Select an option</option>
+                        <option value="search">Search Engine</option>
+                        <option value="social">Social Media</option>
+                        <option value="friend">Friend/Family</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>10. Additional comments:</label>
+                    <textarea name="comments" rows="4" placeholder="Any additional feedback..."></textarea>
+                </div>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ElectroStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const reviewData = Object.fromEntries(formData);
+            
+            try {
+                const response = await fetch('http://localhost:5000/api/submit-review', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(reviewData)
+                });
+                
+                if (response.ok) {
+                    alert('Thank you for your review!');
+                    e.target.reset();
+                } else {
+                    alert('Error submitting review');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error submitting review');
+            }
+        });
+
+        // Add range input value display
+        const range = document.querySelector('input[type="range"]');
+        const output = document.querySelector('output');
+        output.textContent = range.value;
+        range.addEventListener('input', () => output.textContent = range.value);
+    </script>
+</body>
+</html>

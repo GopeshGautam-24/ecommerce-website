@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Electronic Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .card {
+            border-radius: 10px;
+            border: none;
+            transition: transform 0.2s;
+            margin-bottom: 20px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .team-member-card {
+            text-align: center;
+            padding: 20px;
+        }
+        .team-member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+        .story-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px 0 0 8px;
+        }
+        .nav-item .badge {
+            background-color: #e74c3c;
+        }
+        .search-box {
+            max-width: 300px;
+        }
+        .story-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        .img-container {
+            height: 500px;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 1400px;
+            padding: 0 30px;
+        }
+        .mission-vision-section {
+            margin: 60px 0;
+        }
+        .mission-vision-card {
+            padding: 40px;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+            min-height: 300px;
+        }
+        .mission-vision-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .mission-vision-content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Replace the existing navbar with home page navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ElectroStore</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="aboutus.html" class="active">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-5">About Electronic Store</h1>
+        
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-body p-0">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="img-container">
+                                    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                         alt="Our Store" class="story-image">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="story-content">
+                                    <h2>Our Story</h2>
+                                    <p class="lead">From a small shop to a leading electronics destination.</p>
+                                    <p>Welcome to Electronic Store, your number one source for all electronics. Since our establishment in 2023, we've grown from a modest startup to one of the region's most trusted electronics retailers.</p>
+                                    <p>Our journey began with a simple mission: making quality electronics accessible to everyone. Today, we serve thousands of satisfied customers, offering everything from smartphones to smart home devices.</p>
+                                    <p>What sets us apart is our commitment to customer satisfaction and our expert team's dedication to providing personalized service and technical guidance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mission-vision-section">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="mission-vision-card" style="background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+                        <div class="mission-vision-content">
+                            <h3>Our Mission</h3>
+                            <p class="lead">Empowering Lives Through Technology</p>
+                            <p>We strive to:</p>
+                            <ul>
+                                <li>Provide cutting-edge electronic products at competitive prices</li>
+                                <li>Deliver exceptional customer service and technical support</li>
+                                <li>Make technology accessible to everyone</li>
+                                <li>Build lasting relationships with our customers</li>
+                                <li>Stay ahead of technological trends and innovations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="mission-vision-card" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+                        <div class="mission-vision-content">
+                            <h3>Our Vision</h3>
+                            <p class="lead">Shaping the Future of Electronics Retail</p>
+                            <p>We aim to:</p>
+                            <ul>
+                                <li>Become the leading electronics retailer in the country</li>
+                                <li>Create innovative shopping experiences</li>
+                                <li>Expand our reach while maintaining quality service</li>
+                                <li>Set industry standards for customer satisfaction</li>
+                                <li>Foster technological literacy in our community</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Team Section -->
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card team-member-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="gopi" class="team-member-image mx-auto">
+                    <h4>gopi</h4>
+                    <p>Chief Executive Officer</p>
+                    <div class="social-links">
+                        <a href="#" class="text-dark me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card team-member-card">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Anirudh" class="team-member-image mx-auto">
+                    <h4>Anirudh</h4>
+                    <p>Technical Director</p>
+                    <div class="social-links">
+                        <a href="#" class="text-dark me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card team-member-card">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Preet" class="team-member-image mx-auto">
+                    <h4>Preet</h4>
+                    <p>Marketing Manager</p>
+                    <div class="social-links">
+                        <a href="#" class="text-dark me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card team-member-card">
+                    <img src="https://randomuser.me/api/portraits/men/89.jpg" alt="Akshit" class="team-member-image mx-auto">
+                    <h4>Akshit</h4>
+                    <p>Operations Head</p>
+                    <div class="social-links">
+                        <a href="#" class="text-dark me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2>Why Choose Us?</h2>
+                        <ul class="list-unstyled">
+                            <li class="py-2 border-bottom">Wide range of products from trusted brands</li>
+                            <li class="py-2 border-bottom">Competitive prices and regular deals</li>
+                            <li class="py-2 border-bottom">Expert customer support</li>
+                            <li class="py-2 border-bottom">Fast and reliable shipping</li>
+                            <li class="py-2">Secure payment options</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add footer section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ElectroStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

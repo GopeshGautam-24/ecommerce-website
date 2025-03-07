@@ -1,0 +1,43 @@
+[
+  {
+    "satisfaction": "4",
+    "navigation": "very-easy",
+    "features": "search",
+    "recommendation": "6",
+    "purpose": "support",
+    "technicalIssues": "yes",
+    "productSelection": "good",
+    "improvements": "nitin",
+    "source": "social",
+    "comments": "feoibnfub",
+    "timestamp": "2025-03-04T18:56:19.739Z"
+  },
+  {
+    "satisfaction": "4",
+    "navigation": "easy",
+    "features": "search",
+    "recommendation": "6",
+    "purpose": "browse",
+    "technicalIssues": "yes",
+    "productSelection": "good",
+    "improvements": "qwaesrdghjok",
+    "source": "social",
+    "comments": "qaWzsexrdvgybnj",
+    "id": null,
+    "timestamp": "2025-03-05T13:59:12.626Z"
+  },
+  {
+    "satisfaction": "4",
+    "navigation": "easy",
+    "features": "cart",
+    "recommendation": "6",
+    "purpose": "purchase",
+    "technicalIssues": "yes",
+    "productSelection": "excellent",
+    "improvements": "aesrtfy",
+    "source": "advertisement",
+    "comments": "ersxtvhb",
+    "id": 1,
+    "timestamp": "2025-03-05T14:51:55.267Z"
+  }
+]

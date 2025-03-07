@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ElectroStore</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./reviews.html">Review Us</a></li>
+                <li class="cart-icon">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-counter">0</span>
+                    </a>
+                </li>
+                <li class="logbtn"><a href="./login.html" class="login-btn"><i class="fas fa-user"></i> Login</a></li>
+            </ul>
+            <div class="user-section">
+                <!-- This will be populated by JavaScript -->
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner" id="home">
+        <div class="slideshow-container">
+            <div class="banner-slide active">
+                <img src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg" alt="Tech Banner 1">
+                <div class="banner-content">
+                    <h1>Welcome to ElectroStore</h1>
+                    <p>Discover the latest and greatest in technology.</p>
+                    <a href="#products" class="cta-button">Explore Products</a>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <img src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg" alt="Tech Banner 2">
+                <div class="banner-content">
+                    <h1>Premium Smartphones</h1>
+                    <p>Find your perfect device from top brands.</p>
+                    <a href="#smartphones" class="cta-button">View Phones</a>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg" alt="Tech Banner 3">
+                <div class="banner-content">
+                    <h1>Latest Tablets</h1>
+                    <p>Power and portability in your hands.</p>
+                    <a href="#tablets" class="cta-button">View Tablets</a>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <img src="https://images.pexels.com/photos/163143/sackcloth-sackcloth-textured-laptop-ipad-163143.jpeg" alt="Tech Banner 4">
+                <div class="banner-content">
+                    <h1>Essential Accessories</h1>
+                    <p>Complete your tech collection.</p>
+                    <a href="#accessories" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <img src="https://images.pexels.com/photos/1038628/pexels-photo-1038628.jpeg" alt="Tech Banner 5">
+                <div class="banner-content">
+                    <h1>Special Offers</h1>
+                    <p>Incredible deals on premium devices.</p>
+                    <a href="#products" class="cta-button">View Deals</a>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-sidebar">
+            <div class="sidebar-item">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Free Shipping</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Support</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure Payment</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-undo"></i>
+                <span>Easy Returns</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="featured-grid">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="smartphones" class="product-section">
+            <h2>Most Popular Smartphones</h2>
+            <div class="product-grid" id="smartphones-grid">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="tablets" class="product-section">
+            <h2>Best Selling Tablets</h2>
+            <div class="product-grid" id="tablets-grid">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="accessories" class="product-section">
+            <h2>Mobile Accessories</h2>
+            <div class="product-grid" id="accessories-grid">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div> 
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ElectroStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/utils.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
